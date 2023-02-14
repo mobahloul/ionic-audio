@@ -19,3 +19,6 @@ npm install --save ionic-audio@3.2.0
 ```
 npm install --save ionic-audio@5.0.0
 ```
+
+
+# Demo is not updated
