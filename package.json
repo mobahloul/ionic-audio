@@ -1,0 +1,42 @@
+{
+  "name": "ionic-audio",
+  "version": "5.0.0",
+  "description": "An audio player for Ionic 5 and Angular 10+",
+  "main": "./dist/index.js",
+  "typings": "./dist/index.d.ts",
+  "scripts": {
+    "build": "node_modules/.bin/ngc && copyfiles -u 1 ./src/*.scss ./dist",
+    "release": "npm run build && npm publish",
+    "test": "cd demo && npm uninstall ionic-audio && cd.. && npm run build && cd demo && npm install ionic-audio && ionic serve"
+  },
+  "devDependencies": {
+    "@angular/common": "^14.0.0",
+    "@angular/core": "^14.0.0",
+    "@angular/forms": "^14.0.0",
+    "@angular/platform-browser": "^14.0.0",
+    "@angular/platform-browser-dynamic": "^14.0.0",
+    "@angular/compiler": "^14.0.0",
+    "@angular/compiler-cli": "^14.0.0",
+    "@ionic/angular": "^6.1.9",
+    "rxjs": "~6.6.0",
+    "zone.js": "~0.11.4",
+    "typescript": "~4.7.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mobahloul/ionic-audio.git"
+  },
+  "keywords": [
+    "ionic",
+    "angular",
+    "audio",
+    "player",
+    "typescript"
+  ],
+  "author": "Ariel Faur - Updated by Mohammad Bahloul",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mobahloul/ionic-audio/issues"
+  },
+  "homepage": "https://github.com/mobahloul/ionic-audio#readme"
+}
