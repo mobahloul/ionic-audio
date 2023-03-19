@@ -23,7 +23,7 @@ export class WebAudioTrack implements IAudioTrack {
   private _id: number;
   private _isLoading: boolean;
   private _hasLoaded: boolean;
-  constructor(public src: string, @Optional() public preload: string = 'none') {
+  constructor(public src: string, @Optional() public preload: any = 'none') {
     // audio context not needed for now
     // @Optional() private ctx: AudioContext = undefined
     // this.ctx = this.ctx || new AudioContext();
